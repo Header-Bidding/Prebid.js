@@ -6,6 +6,7 @@ import {config} from '../src/config.js';
 
 const DEFAULT_SUB_DOMAIN = 'exchange';
 const BIDDER_CODE = 'illumin';
+const GVLID = '149';
 const BIDDER_VERSION = '1.0.0';
 const CURRENCY = 'USD';
 const TTL_SECONDS = 60 * 5;
@@ -327,6 +328,7 @@ export const spec = {
   code: BIDDER_CODE,
   version: BIDDER_VERSION,
   supportedMediaTypes: [BANNER, VIDEO],
+  gvlid: GVLID,
   isBidRequestValid,
   buildRequests,
   interpretResponse,
